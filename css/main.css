@@ -7,7 +7,7 @@ a:hover {
   transition: all .2s ease-in;
 }
 .title {
-  border-bottom: 1px solid #1EAEDB;
+  border-bottom: 1px solid #ae1e24;
 }
 /* navigation bar */
 .navbar {
@@ -18,6 +18,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Barlow', sans-serif;
 }
 .navbar-items {
   display: flex;
@@ -37,7 +38,7 @@ a:hover {
   width: 2.5em;
   height: 2.5em;
   border-radius: 50%;
-  background-color: #1EAEDB;
+  background-color: #ae1e24;
   position: relative;
   margin: .5em;
 }
@@ -52,7 +53,7 @@ a:hover {
 }
 .imgButtons:hover,
 .imgButtons:focus {
-  background-color: #f05454;
+  background-color: #ae1e24;
 }
 .navbar-toggle i {
   color: black;
@@ -60,17 +61,23 @@ a:hover {
   padding: .75em;
 }
 .navbar-toggle i:hover {
-  color: #1EAEDB;
+  color: #115b99;
 }
 .navbar-toggle {
   display: none;
 }
 /* hero header */
 .welcome {
-  background-image: url("dan-carreno-JB3QUablsm0-unsplash.jpg");
-  background-color: #eee;
+  background-image: url("images/mountains.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-repeat: no-repeat;
   text-align: center;
-  padding: 3em;
+  width: 100%;
+  font-family: 'Barlow', sans-serif;
 }
 .welcome h1 {
   font-size: 200%;
@@ -78,11 +85,11 @@ a:hover {
 }
 .highlight {
   font-style: normal;
-  color: #f05454;
+  color: #ae1e24;
 }
 .welcome button {
   background-size: 100% 200%;
-  background-image: linear-gradient(to top, #1EAEDB 50%, #f05454 50%);
+  background-image: linear-gradient(to top, #115b99 50%, #ae1e24 50%);
   transition: background-position .5s linear, color .5s linear;
   color: white;
   font-size: large;
@@ -102,7 +109,7 @@ a:hover {
   padding-top: 4em;
 }
 #about .row {
-  background-color: #FDABAB;
+  background-color: #ae1e24;
   padding: 1.5em;
   border-radius: 5px;
   -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
@@ -125,7 +132,7 @@ a:hover {
   text-align: center;
   font-size: 350%;
   justify-content: center;
-  background-color: #1EAEDB;
+  background-color: #115b99;
   padding: .5em;
   margin-bottom: 1em;
   border-radius: 5px;
@@ -137,10 +144,10 @@ a:hover {
   font-size: 70%;
 }
 .skills-item:nth-child(1){
-  background-color: #58D68D;
+  background-color: #ae1e24;
 }
 .skills-item:nth-child(2){
-  background-color: #3498DB;
+  background-color: #115b99;
 }
 .skills-item:nth-child(3){
   background-color: #FFDF36;
@@ -208,7 +215,7 @@ footer h3:hover {
  color: white;
 }
 .top:hover {
-  background-color: #1EAEDB;
+  background-color: #115b99;
 }
 
 /* animation and keyframes */
