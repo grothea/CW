@@ -1,13 +1,15 @@
-/* general styles
+
+/*
+- fonts -
 font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif;
+  - colors -
+f8de24 yellow
+0E345C dark blue
+AE2D26 red
+*/
 
-D48403, C7A73B yellow
-063C60 dark blue
-03325A, 0E345C* dark blue navy
-545F6D gray
-04334C dark bluegreen
-83040A, 8D120C* AE2D26** red */
+/* general styles */
 body {
   background-color: white;
   font-family: 'Montserrat', sans-serif;
@@ -27,8 +29,8 @@ a:hover {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   color: black;
-  margin-left: -5%;
-  width: 60%;
+  margin-left: 0;
+  width: 100%;
 }
 h3 {
   font-family: 'Raleway', sans-serif;
@@ -36,7 +38,7 @@ h3 {
 }
 /* navigation bar */
 .hero {
-  background-image: url(../images/alex-fredrich-5bMj6krNKiM-unsplash.jpg);
+  background-image: url(../FinalImages/Hero.jpg);
   background-color: #0e345c;  /* Used if the image is unavailable */
   height: 600px;
   background-position: center;
@@ -48,7 +50,7 @@ h3 {
 .navbar {
   background: rgba(14, 52, 92, .75);
   width: 100%;
-  margin: 0px;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,6 +109,7 @@ h3 {
   color: white;
 }
 .welcome h1 {
+  margin-top: 100px;
   font-size: 300%;
   font-weight: bold;
   font-family: 'Raleway', sans-serif;
@@ -236,7 +239,7 @@ footer h3:hover {
 }
 
 /* animation and keyframes */
-/* .slideup {
+.slideup {
   animation: slideup 1s ease-out;
 }
 @keyframes slideup {
@@ -246,7 +249,7 @@ footer h3:hover {
 @keyframes slidedown {
   0% {transform: translate(0, -40px)}
   100% {transform: translate(0, 0px);}
-} */
+}
 
 /* Media Queries */
 /* tablet and smaller */
@@ -256,22 +259,25 @@ footer h3:hover {
   .logo {
     flex-direction: column;
     align-self: flex-start;
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
   .navbar-items {
     display: none;
   }
-  .navbar-items:last-child {
-    background-color: red;
-    flex-direction: row;
-  }
   .navbar-items-center {
-    position: relative;
-    float: left;
+    text-align: left;
+    margin-left: -20px;
+  }
+  .nav-link {
+    padding-top: 1em;
   }
   .navbar-items-right {
-    margin-left: 1em;
-    margin-top: .5em;
-    flex-direction: row;
+    margin-right: 0em;
+    margin-top: -9em;
+    padding: .5em;
+    flex-direction: column;
+    align-self: flex-end;
   }
   .navbar-toggle {
     align-self: flex-end;
@@ -280,23 +286,16 @@ footer h3:hover {
     cursor: pointer;
   }
   .Navbar__ToggleShow {
-    display: block;
-    position: relative;
+    display: flex;
     animation: slidedown .5s linear;
   }
-  .welcome h1 {
-    margin-top: 110px;
-    padding: 1.5%;
-  }
-  .title {
-    margin-left: 0px;
-    width: 100%;
-  }
+  .title
 }
 /* Larger than mobile */
 @media only screen and (min-width: 400px) {
   .welcome {
-    padding: 4em;
+    padding: 0em;
+    margin-top: 150px;
   }
   .welcome h1 {
     font-size: 300%;
@@ -313,6 +312,7 @@ footer h3:hover {
   }
   .welcome h1 {
     font-size: 400%;
+    margin-top: -90px;
   }
   .skills-item {
     padding: .2em;
