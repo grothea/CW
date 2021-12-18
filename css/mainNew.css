@@ -12,13 +12,13 @@ AE2D26 red
 /* general styles */
 body {
   background-color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 a:hover {
   transition: all .2s ease-in;
@@ -28,27 +28,27 @@ ul {
   list-style-type: disc;
 }
 .title {
-  border-bottom: 2px solid #AE2D26;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: black;
   margin-left: 0;
   width: 100%;
+  text-align: center;
 }
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: white;
 }
 /* navigation bar */
 .hero {
-  background-image: url(../FinalImages/Hero.jpg);
-  background-color: #0e345c;  /* Used if the image is unavailable */
-  height: 600px;
+  background: rgba(14, 52, 92, .2);  /* Used if the image is unavailable */
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 30px;
 }
 .navbar {
   background: rgba(14, 52, 92, 1);
@@ -57,7 +57,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .navbar-items {
   display: flex;
@@ -108,14 +108,15 @@ h3 {
 }
 /* hero header */
 .content {
-  margin-top: 10%;
+  margin-top: 5%;
   color: white;
 }
 .welcome h1 {
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 300%;
   font-weight: bold;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: black;
 }
 .welcome button {
   background-size: 100% 200%;
@@ -138,30 +139,31 @@ h3 {
 .welcome button a:focus {
   color: #AE2D26;
 }
+.featured {
+  margin-top: 5%;
+}
+.featured img {
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+   -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
 
-/* Current Projects section */
+/* Current Products section */
 
-#work {
+#products {
   padding-top: 3em;
 }
-#work .row {
-  background: rgba(14, 52, 92, .9);
-  //background-color: rgba(255,255,255,.6);
-  padding: 1em;
-  border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-   -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+#products .row {
   text-align: center;
   margin: 1em;
 }
 .list {
-  background-color: white;
-  border-radius: 10px;
   padding: 1em;
   text-align: left;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  font-size: 120%;
 }
 .list .button {
   background: rgba(174, 45, 38, 1);
@@ -169,6 +171,7 @@ h3 {
   border: 1px solid rgba(174, 45, 38, 1);
   margin: 1em 0;
   height: auto;
+  font-size: 120%;
 }
 .list .button:hover {
   background: white;
@@ -180,8 +183,51 @@ h3 {
 .list a:hover {
   color: rgba(14, 52, 92, 1);
 }
-#work img {
-  border-radius: 5px;
+#products img {
+  width: 100%;
+}
+#products .container {
+  width: 100%;
+  padding: 30px 30px;
+}
+#products .container:nth-child(even) {
+  background-color: rgba(14, 52, 92, 1);
+  color: white;
+}
+#products .container:nth-child(even) .title {
+  color: white;
+}
+#products img {
+  border-radius: 10px;
+}
+/*tag */
+.tag {
+  background-color: #AE2D26;
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 120%;
+  color: white;
+}
+.tag .button {
+  background-color: white;
+  color: #AE2D26;
+  font-size: large;
+  border-radius: 20px;
+  border: none;
+  margin: 0 auto;
+}
+.tag .button:hover {
+  background-color: #AE2D26;
+  color: white;
+  border: 2px solid white;
+  transition: all .2s ease-in;
+}
+#closet {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#closet img {
+  border-radius: 10px;
 }
 /* Contact section */
 #contact {
@@ -254,7 +300,16 @@ footer h3:hover {
 .top:hover {
   background-color: #002868;
 }
+.footerNav {
+  margin: 20px;
+  margin-left: -10px;
+}
+.footerNav div {
+  display: inline-block;
+}
+
 /* about */
+
 #about .row {
   margin: 30px 0;
 }
@@ -382,6 +437,12 @@ footer h3:hover {
   #CustomClosets .button {
     margin: 1em 0;
   }
+  .featured img {
+    display: none;
+  }
+  .footerNav div {
+    display: block;
+  }
 
 /* Larger than mobile */
 @media only screen and (min-width: 400px) {
@@ -398,10 +459,14 @@ footer h3:hover {
   .points p {
     height: 10em;
   }
+
 }
 
 /* Larger than tablet */
 @media only screen and (min-width: 768px) {
+  .hero {
+    height: 600px;
+  }
   .welcome {
     padding: 6em;
   }
