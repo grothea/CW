@@ -40,6 +40,7 @@ h3 {
   color: white;
 }
 /* navigation bar */
+
 .hero {
   background-image: url(../FinalImages/Hero.jpg);
   background-color: #0e345c;  /* Used if the image is unavailable */
@@ -106,6 +107,7 @@ h3 {
 .navbar-toggle {
   display: none;
 }
+
 /* hero header */
 .content {
   margin-top: 10%;
@@ -138,7 +140,10 @@ h3 {
 .welcome button a:focus {
   color: #AE2D26;
 }
-
+#follow {
+  background: #f8de24;
+  padding: 2em;
+}
 /* Current Projects section */
 
 #work {
@@ -278,6 +283,7 @@ footer h3:hover {
    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
+
 /* Closet Page */
 #CustomClosets h1 {
   margin-top: 1em;
